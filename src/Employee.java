@@ -33,8 +33,24 @@ public class Employee
   }
   public String toString()
   {
-    String worker="name: "+name+", wage: $"+hourlyWage+",hours: "+hoursWorked;
+    String worker="name: "+name+", wage: $"+hourlyWage+", hours: "+hoursWorked;
     return worker;
   }
-  public void setName
+  public void setName(String newName)
+  {
+    name=newName;
+  }
+  public void setWage(double newWage)
+  {
+    hourlyWage=newWage;
+  }
+  public void setHours(int h)
+  {
+    hoursWorked=h;
+  }
+  public void giveRaise(String newName)
+  {
+    hourlyWage++;
+  }
+}
   
